@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
+
 <body>
 
     <header class="header">
@@ -30,9 +31,9 @@
 
 
                     <ul class="site-nav">
-                        <li><a href="./index.html" class="link current">Studio</a></li>
-                        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-                        <li><a href="" class="link">Contacts</a></li>
+                        <li><a class="site-nav-link link current" href="./index.html">Studio</a></li>
+                        <li><a class="site-nav-link link" href="./portfolio.html">Portfolio</a></li>
+                        <li><a class="site-nav-link link" href="">Contacts</a></li>
                     </ul>
                 </div>
             </nav>
@@ -47,7 +48,7 @@
         <!-- Hero image -->
         <section class="hero">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="hero-button" type="button">Order Service</button>
+            <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </section>
 
         <!-- Section 1 -->
@@ -57,6 +58,7 @@
                 <ul class="section-item">
                     <li>
                         <div class="feature-icon">
+
                             <svg class="" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
@@ -395,6 +397,18 @@
         </ul>
     </footer>
 
+    <!--Modal window  -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+                <svg class="modal-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
