@@ -184,8 +184,6 @@ body {
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
-
-    /* outline: 5px solid rgb(235, 16, 118); */
 }
 
 /* contacts */
