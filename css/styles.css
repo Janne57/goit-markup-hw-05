@@ -774,8 +774,10 @@ body {
 
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
+    visibility: visible;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn {
@@ -792,7 +794,6 @@ body {
     background: var(--modal-btn-bcg);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 
 .modal-icon {
     width: 8px;
